@@ -1,27 +1,9 @@
 ---
 name: email-management
 description: Orchestrate email operations across SMTP, AWS SES, SendGrid, Gmail, and Microsoft Graph — compose and send emails, read inbox, search messages, manage folders, and handle attachments. Use when sending emails, reading inbox, searching for messages, replying to threads, managing email folders, or checking attachments.
-version: "1.0.0"
 license: Apache-2.0
 compatibility: Requires mcp-email server connected. Optional: mcp-crm for contact context, mcp-finance for invoice delivery, mcp-calendar for meeting invites.
-allowed-tools:
-  - send_email
-  - list_inbox
-  - get_email
-  - search_emails
-  - reply_to_email
-  - list_labels
-  - move_to_folder
-  - mark_read
-  - get_attachments
-tags:
-  - communication
-  - email
-  - messaging
-  - outreach
-references:
-  - references/tool-sequences.md
-  - references/examples.md
+allowed-tools: [send_email, list_inbox, get_email, search_emails, reply_to_email, list_labels, move_to_folder, mark_read, get_attachments]
 metadata:
   author: Zavora AI
   mcp-server: mcp-email
